@@ -7,6 +7,9 @@ import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
 import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import org.springframework.beans.factory.annotation.Value;
 
+/**
+ * 配置变更监听器
+ */
 public class ConfigurationChangeListener {
     @ApolloConfig("application")
     private Config config; //inject config for namespace application
