@@ -17,3 +17,20 @@ echo 'app.id=democtripapollo' > $PROJECT_ROOT/META-INF/app.properties
 touch /opt/settings/server.properties
 echo 'env=dev' > /opt/settings/server.properties
 ```
+
+添加到Apollo中的配置如下:
+
+```
+spring.application.name = spring-data-repository-fragment
+server.port = 8083
+spring.main.banner-mode = off
+server.http2.enabled = true
+spring.datasource.url = jdbc:mysql://127.0.0.1:3306/spring_data_repository_fragment?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&createDatabaseIfNotExist=true
+spring.datasource.username = root
+spring.datasource.password = root
+spring.datasource.driver-class-name = com.mysql.jdbc.Driver
+spring.datasource.hikari.minimum-idle = 1
+spring.datasource.hikari.maximum-pool-size = 100
+spring.datasource.hikari.driver-class-name = com.mysql.jdbc.Driver
+test = test111111111
+```
